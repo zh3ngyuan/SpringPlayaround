@@ -33,7 +33,7 @@ public class FileUploadController {
                         .map(
                                 path -> MvcUriComponentsBuilder.fromMethodName(
                                         FileUploadController.class,
-                                        "saveFile",
+                                        "serveFile",
                                         path.getFileName().toString()).build().toUri().toString())
                         .collect(Collectors.toList())
         );

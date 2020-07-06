@@ -17,7 +17,7 @@ public class UploadingFilesApplication {
 	}
 
 	@Bean
-	CommandLineRunner init(StorageService storageService) {
+	CommandLineRunner onInit(StorageService storageService) {
 		return args -> {
 			storageService.deleteAll();
 			storageService.init();
