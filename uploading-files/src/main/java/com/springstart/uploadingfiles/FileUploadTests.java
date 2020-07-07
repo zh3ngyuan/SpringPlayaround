@@ -65,7 +65,7 @@ public class FileUploadTests {
 
         then(this.storageService).should().store(multipartFile);
     }
-    
+
     @Test
     public void should404WhenMissingFile() throws Exception {
         given(this.storageService.loadAsResource("test.txt"))
