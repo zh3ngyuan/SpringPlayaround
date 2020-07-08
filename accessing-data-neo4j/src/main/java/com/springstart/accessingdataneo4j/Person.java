@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 
 @NodeEntity
 public class Person {
-    @Id @GeneratedValue private long id;
+    @Id @GeneratedValue private Long id;
 
     private String name;
 
